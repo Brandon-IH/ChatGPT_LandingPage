@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajos de Piel Exclusivos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Fajos Exclusivos</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Fajos</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Fajos de Piel de Alta Gama</h1>
+            <p>Elegancia y resistencia en un solo accesorio</p>
+            <button class="cta-button">Explorar colección</button>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section id="productos" class="productos-destacados">
+        <h2>Fajos Destacados</h2>
+        <div class="productos-container">
+            <div class="producto-card">
+                <img src="https://us.123rf.com/450wm/volodymyrshtun89/volodymyrshtun892102/volodymyrshtun89210200106/164084798-dos-cinturones-de-cuero-marr%C3%B3n-para-hombre-con-broche-de-bronce-en-una-silla-de-madera-con-fondo.jpg?ver=6" alt="Fajo Elegante de Piel">
+                <h3>Fajo Elegante</h3>
+                <p>$75.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="https://www.corbetosboots.com/blog/wp-content/uploads/2020/11/img_20201106_181308-scaled.jpg" alt="Fajo Casual de Piel">
+                <h3>Fajo Casual</h3>
+                <p>$55.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="producto-card">
+                <img src="https://m.media-amazon.com/images/I/51Aurs7LmnL._AC_.jpg" alt="Fajo Clásico de Piel">
+                <h3>Fajo Clásico</h3>
+                <p>$65.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section id="sobre-nosotros" class="sobre-nosotros">
+        <h2>¿Quiénes Somos?</h2>
+        <p>En Fajos Exclusivos, nos especializamos en la fabricación de fajos de piel premium, utilizando materiales de la más alta calidad y procesos artesanales. Cada uno de nuestros productos está diseñado para durar y para añadir un toque de sofisticación a cualquier atuendo.</p>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-container">
+            <div class="testimonio">
+                <p>"La calidad de los fajos es insuperable. Estoy realmente impresionado."</p>
+                <h4>- Jaime Gómez</h4>
+            </div>
+            <div class="testimonio">
+                <p>"Excelente diseño y acabado. Vale cada centavo."</p>
+                <h4>- Sandra Martínez</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Carrito de Compras -->
+    <section id="carrito" class="carrito">
+        <h2>Carrito de Compras</h2>
+        <div id="carrito-items"></div>
+        <div id="total">Total: $0.00</div>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Fajos Exclusivos. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
