@@ -1,0 +1,130 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.spam{
+    background-color: #022b3a;
+    display: block;
+    width:100%; 
+    padding: .2%;
+    color: white;
+    text-align: center;
+}
+
+.list_menu{
+    display: flex; /* Utiliza Flexbox para alinear los elementos hijos en una fila */
+     /* Distribuye el espacio disponible entre los elementos hijos */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    justify-content: space-between;/* Alinea los elementos hijos verticalmente en el centro */
+    padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido */
+    position: relative; /* Permite la colocación de elementos absolutamente posicionados dentro de este contenedor */
+}
+
+.menu-options {
+    list-style: none; /* Quita los puntos de las listas no ordenadas */
+    display: flex; /* Utiliza Flexbox para alinear los elementos en una fila  leandro Andriani */ 
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+}
+
+.menu-bar{
+    display: flex;
+}
+
+.login{
+    list-style: none; /* Quita los puntos de las listas no ordenadas */
+    display: flex; /* Utiliza Flexbox para alinear los elementos en una fila  leandro Andriani */
+    font-size: 20px; /* Establece el tamaño de fuente en 20px */
+    font-family: inherit; /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    margin-right: 10px;
+}
+
+.menu-options li {
+    margin-left: 20px; /* Añade un margen de 30px a la izquierda de cada elemento de la lista */
+}
+
+.menu-options a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: black; /* Establece el color del texto de los enlaces */
+    font-size: 18px; /* Establece el tamaño de fuente en 20px */
+    font-family: inherit; /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
+    margin-left: 20px;
+}
+
+.menu-options a:hover{
+    text-decoration:underline;
+}
+
+.button_iniciar_sesion{
+    background-color: #022b3a;; /* Color femenino y llamativo */
+    color: #fff; /* Texto en blanco para contraste */
+    padding: 10px 20px;
+    height: 35px;
+    width: 10rem;
+    /* Estilos para botones */
+    font-family: 'Poppins', sans-serif;
+    color: #fff; /* Texto en blanco para contraste */
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button_iniciar_sesion:hover{
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+}
+
+.imagen_main_titulo {
+    background-image: url('https://media.revistagq.com/photos/5f3623e00c5e55e7fec1e57c/16:9/w_3999,h_2249,c_limit/ryan-plomp-bySPt2lySzg-unsplash.jpg'); /* Aquí pones la URL de tu imagen */
+    background-size: cover; /* Para que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    height: 85vh; /* Ocupa toda la altura de la pantalla */
+    display: flex; /* Usamos flexbox para alinear el título */
+    justify-content: center; /* Centra el título horizontalmente */
+    align-items: center; /* Centra el título verticalmente */
+    position: relative; /* Asegura que los elementos se posicionen correctamente */
+    color: white; /* Color del texto para que sea visible sobre la imagen */
+}
+  
+.tittle_main {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    font-size: 3em; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para que el texto destaque */
+    padding: 20px;
+    border-radius: 2px; /* Bordes redondeados para un toque más elegante */
+}
+
+
+.logo-whatsapp {
+    position: fixed; /* Fija el logo en la pantalla */
+    bottom: 20px; /* Posición desde la parte inferior */
+    right: 20px; /* Posición desde la parte derecha */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+  
+.logo-whatsapp img {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+    cursor: pointer; /* Cambia el cursor para que parezca clicable */
+}
+
+.img_marcas{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin: 2rem;
+}
+
+.logo{
+    width: 100px;
+}
+
+.logo:hover{
+    transform: scale(1.5); /* Agranda la imagen al pasar el mouse */
+}
