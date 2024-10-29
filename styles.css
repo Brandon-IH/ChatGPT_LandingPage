@@ -5,7 +5,9 @@
     box-sizing: border-box;
 }
 
-
+body{
+    overflow-x: hidden;
+}
 
 .spam{
     background-color: #022b3a;
@@ -23,36 +25,38 @@
     justify-content: space-between;/* Alinea los elementos hijos verticalmente en el centro */
     padding: 20px; /* Añade un relleno interno de 20px alrededor del contenido */
     position: relative; /* Permite la colocación de elementos absolutamente posicionados dentro de este contenedor */
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .menu-options {
     list-style: none; /* Quita los puntos de las listas no ordenadas */
-    display: flex; /* Utiliza Flexbox para alinear los elementos en una fila  leandro Andriani */ 
+    display: flex; /* Utiliza Flexbox para alinear los elementos en una fila */ 
     align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
 }
-
-.menu-bar{
-    display: flex;
+.menu-options li {
+    margin-left: 20px; /* Añade un margen de 30px a la izquierda de cada elemento de la lista */
 }
+
 
 .login{
     list-style: none; /* Quita los puntos de las listas no ordenadas */
-    display: flex; /* Utiliza Flexbox para alinear los elementos en una fila  leandro Andriani */
+    display: flex; /* Utiliza Flexbox para alinear los elementos en una fila  */
     font-size: 20px; /* Establece el tamaño de fuente en 20px */
-    font-family: inherit; /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
     text-decoration: none; /* Quita el subrayado de los enlaces */
     margin-right: 10px;
 }
 
-.menu-options li {
-    margin-left: 20px; /* Añade un margen de 30px a la izquierda de cada elemento de la lista */
-}
+
 
 .menu-options a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: black; /* Establece el color del texto de los enlaces */
     font-size: 18px; /* Establece el tamaño de fuente en 20px */
-    font-family: inherit; /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
     margin-left: 20px;
 }
 
@@ -100,6 +104,14 @@
     border-radius: 2px; /* Bordes redondeados para un toque más elegante */
 }
 
+.tituloPrincipal{
+    margin-left: 63px;
+    display: block;
+    width:100%; 
+    font-family: inherit; 
+    font-size: 40px; 
+}
+
 
 .logo-whatsapp {
     position: fixed; /* Fija el logo en la pantalla */
@@ -114,17 +126,79 @@
     cursor: pointer; /* Cambia el cursor para que parezca clicable */
 }
 
+
+.marcas{
+    margin: 30px;
+}
 .img_marcas{
     display: flex;
     justify-content: space-between;
     text-decoration: none;
     margin: 2rem;
+    padding: 15px;
 }
 
 .logo{
     width: 100px;
 }
 
+.img_product{
+    width: 300px;
+    object-fit: cover; /* Mantiene el aspecto y rellena el espacio */
+}
+
+.articulos{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap; /* aliena los articulos en la siguiente linea*/
+    row-gap: 60px;
+}
+
+.articulo{
+    display: block;
+    margin-left: 4.6%;
+    width: 280px;
+    height: auto;
+}
+
+.descripcion{
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
 .logo:hover{
     transform: scale(1.5); /* Agranda la imagen al pasar el mouse */
 }
+
+
+.footer{
+    display: flex;
+    justify-content:left;
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    margin: 4rem;
+   
+}
+
+.politicas{
+    margin-top: 10%;
+    margin-left: 12%;
+    line-height: 1.5;
+}
+
+.links_politicas{
+    list-style: none;
+}
+.links_politicas a{
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: rgb(99, 96, 96); /* Establece el color del texto de los enlaces */
+    font-size: 15px; /* Establece el tamaño de fuente en 20px */
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    /* Define la fuente del texto usando Montserrat, con una fuente sans-serif alternativa */
+    margin-left: 20px;
+}
+
+.tituloFooter{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+
